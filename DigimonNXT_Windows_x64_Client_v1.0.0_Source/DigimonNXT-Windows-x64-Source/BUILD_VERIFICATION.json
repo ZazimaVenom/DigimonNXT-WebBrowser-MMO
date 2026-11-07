@@ -1,0 +1,21 @@
+{
+  "client_version": "1.0.0",
+  "target": "Windows x64",
+  "sdk": "10.0.401",
+  "framework": "net10.0-windows",
+  "webview2_sdk": "1.0.4191.47",
+  "self_contained_publish": "PASS: zero warnings, zero errors",
+  "url_checks": {
+    "passed": 31,
+    "failed": 0
+  },
+  "asset_cache_checks": {
+    "passed": 14,
+    "failed": 0
+  },
+  "native_windows_execution": "NOT RUN: build host Linux",
+  "exe_sha256": "3a21207bd4d48617d0fd59dd60983dbd20049f3b0200ba2e480e55767ad07b35",
+  "built_file_count": 3891,
+  "manifest_conditional_refresh": "PASS: verified ETag + If-None-Match and HTTP 304",
+  "client_dll_sha256": "a5d2bcc5a25f4962c699fb715fab8aa1215dcaabaf628ab08c75556e4bc7a5c9"
+}

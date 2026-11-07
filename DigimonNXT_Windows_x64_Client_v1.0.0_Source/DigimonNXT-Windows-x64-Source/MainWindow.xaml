@@ -1,0 +1,62 @@
+<Window x:Class="DigimonNXT.Client.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:wv="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf" Title="Digimon NXT — Tamer Client" Width="1440" Height="960" MinWidth="860" MinHeight="640" Background="#071322" FontFamily="Segoe UI" UseLayoutRounding="True" SnapsToDevicePixels="True" Loaded="Window_Loaded" PreviewKeyDown="Window_KeyDown" Closing="Window_Closing">
+ <Grid>
+  <Grid.RowDefinitions><RowDefinition Height="62"/><RowDefinition Height="*"/><RowDefinition Height="30"/></Grid.RowDefinitions>
+  <Border Grid.Row="0" Background="#0C1C2F" BorderBrush="#29425C" BorderThickness="0,0,0,1" Padding="20,0">
+   <DockPanel LastChildFill="True">
+    <StackPanel Orientation="Horizontal" DockPanel.Dock="Left" VerticalAlignment="Center" Margin="0,0,26,0">
+     <Border Background="#EFFF53" CornerRadius="3" Width="30" Height="32"><TextBlock Text="N" Foreground="#071322" FontSize="25" FontWeight="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+     <TextBlock Text="DIGIMON" Margin="10,0,5,0" FontSize="18" FontWeight="Bold" VerticalAlignment="Center"/><TextBlock Text="NXT" Foreground="#EFFF53" FontSize="18" FontWeight="Bold" VerticalAlignment="Center"/>
+    </StackPanel>
+    <StackPanel Orientation="Horizontal" DockPanel.Dock="Right" VerticalAlignment="Center">
+     <Button Content="Back" Click="Back_Click" Padding="12,8" Margin="0,0,8,0" ToolTip="Go back (Alt+Left)" x:Name="BackButton" IsEnabled="False"/>
+     <Button Content="Reload" Click="Reload_Click" Padding="12,8" Margin="0,0,8,0" ToolTip="Reload the current page (F5)"/>
+     <Button Content="Full screen" Click="FullScreen_Click" Padding="12,8" Margin="0,0,8,0" ToolTip="Toggle full screen (F11)"/>
+     <Button Content="Server &amp; options" Click="Options_Click" Padding="12,8" BorderBrush="#4DDDED"/>
+    </StackPanel>
+    <TextBlock x:Name="ServerBadge" Text="TAMER CLIENT" Foreground="#70DFE9" FontSize="12" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" TextWrapping="NoWrap"/>
+   </DockPanel>
+  </Border>
+  <Grid Grid.Row="1">
+   <wv:WebView2 x:Name="GameView" Visibility="Collapsed" DefaultBackgroundColor="#071322"/>
+   <ScrollViewer x:Name="WelcomePanel" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+    <Grid MaxWidth="1120" Margin="44,48" VerticalAlignment="Center">
+     <Grid.ColumnDefinitions><ColumnDefinition Width="0.95*"/><ColumnDefinition Width="40"/><ColumnDefinition Width="1.2*"/></Grid.ColumnDefinitions>
+     <StackPanel Grid.Column="0" VerticalAlignment="Center">
+      <TextBlock Text="YOUR DIGITAL WORLD" Foreground="#53E6F7" FontSize="13" FontWeight="Bold" Margin="0,0,0,20"/>
+      <TextBlock Text="Make the&#10;connection." FontSize="46" LineHeight="52" FontWeight="Bold" Margin="0,0,0,22"/>
+      <TextBlock Text="Your partners. Your rivals. Your server." Foreground="#C8D9E8" FontSize="20" Margin="0,0,0,14"/>
+      <TextBlock Text="Step into Digimon NXT with a focused game window, crisp display controls and built-in Dawn assets." Foreground="#ADC0D3" FontSize="16" LineHeight="25" Margin="0,0,20,24"/>
+      <StackPanel Orientation="Horizontal" Height="116" Margin="0,4,0,20">
+       <Image x:Name="PartnerOne" Width="108" Height="108" Stretch="Uniform" RenderOptions.BitmapScalingMode="NearestNeighbor" Margin="0,0,12,0"/>
+       <Image x:Name="PartnerTwo" Width="108" Height="108" Stretch="Uniform" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
+      </StackPanel>
+      <Border BorderBrush="#29425C" BorderThickness="1,0,0,0" Padding="15,3"><TextBlock Text="WINDOWS x64  /  MICROSOFT EDGE WEBVIEW2" Foreground="#6D9CB6" FontSize="11" FontWeight="SemiBold"/></Border>
+     </StackPanel>
+     <Border Grid.Column="2" Background="#0D1D30" BorderBrush="#29425C" BorderThickness="1" CornerRadius="10" Padding="30">
+      <StackPanel>
+       <TextBlock Text="SERVER CONNECTION" Foreground="#53E6F7" FontSize="12" FontWeight="Bold" Margin="0,0,0,10"/>
+       <TextBlock Text="Where are we heading?" FontSize="27" FontWeight="Bold" Margin="0,0,0,9"/>
+       <TextBlock Text="Enter an IP address, domain or full game URL." Foreground="#ADC0D3" Margin="0,0,0,21"/>
+       <Label Target="{Binding ElementName=ServerInput}" Content="_Game server" Foreground="#EDF4FC" FontSize="14" Padding="0,0,0,7"/>
+       <TextBox x:Name="ServerInput" Text="http://127.0.0.1/DigimonNXT/" AutomationProperties.Name="Game server address" KeyDown="ServerInput_KeyDown" TextChanged="ServerInput_TextChanged"/>
+       <TextBlock Text="Examples: 192.168.1.20 · play.example.com · https://play.example.com/game/" FontSize="12" Foreground="#86A2BA" Margin="0,10,0,18"/>
+       <StackPanel Orientation="Horizontal" Margin="0,0,0,22"><Button Content="Use this PC" Click="Local_Click" Padding="12,7" FontSize="12"/><TextBlock Text="Apache and MySQL must be running." FontSize="12" Foreground="#86A2BA" VerticalAlignment="Center" Margin="12,0,0,0"/></StackPanel>
+       <Border Height="1" Background="#29425C" Margin="0,0,0,20"/>
+       <DockPanel Margin="0,0,0,12"><TextBlock Text="Game display size" FontWeight="SemiBold"/><TextBlock x:Name="ZoomLabel" Text="200% · 4K default" Foreground="#EFFF53" HorizontalAlignment="Right"/></DockPanel>
+       <Slider x:Name="ZoomSlider" Minimum="100" Maximum="250" TickFrequency="25" IsSnapToTickEnabled="True" Value="200" ValueChanged="Zoom_Changed" AutomationProperties.Name="Game zoom percentage" Margin="0,0,0,8"/>
+       <TextBlock Text="200% game zoom by default. Windows scales the native interface for your display. Smaller screens may suit 100–150%." Foreground="#86A2BA" FontSize="12" Margin="0,0,0,20"/>
+       <CheckBox x:Name="AutoConnectCheck" IsChecked="True" Margin="0,0,0,24"><TextBlock Text="Connect automatically when I open the client" FontSize="14" Foreground="#ADC0D3" MaxWidth="290"/></CheckBox>
+       <Border x:Name="ConnectionNotice" Background="#102B3A" BorderBrush="#28546B" BorderThickness="1" CornerRadius="5" Padding="13" Margin="0,0,0,17"><TextBlock x:Name="ConnectionMessage" Text="Ready to connect. Choose a server at any time." FontSize="14" Foreground="#B7DDEB"/></Border>
+       <Button x:Name="ConnectButton" Content="Connect to game →" Click="Connect_Click" Background="#EFFF53" Foreground="#071322" BorderBrush="#EFFF53" FontSize="16" Padding="20,15"/>
+       <Button x:Name="ReturnButton" Content="Return to game" Visibility="Collapsed" Click="Return_Click" Margin="0,10,0,0"/>
+       <Button x:Name="RuntimeButton" Content="Install Microsoft Edge WebView2" Click="Runtime_Click" Visibility="Collapsed" Margin="0,10,0,0"/>
+      </StackPanel>
+     </Border>
+    </Grid>
+   </ScrollViewer>
+  </Grid>
+  <Border Grid.Row="2" Background="#0B192A" BorderBrush="#29425C" BorderThickness="0,1,0,0" Padding="18,0">
+   <DockPanel><TextBlock x:Name="DisplayStatus" DockPanel.Dock="Right" Text="200%  •  WINDOWS x64" FontSize="11" Foreground="#7DABB8" VerticalAlignment="Center"/><TextBlock x:Name="StatusText" Text="Ready • Choose your server" FontSize="11" Foreground="#ADC0D3" VerticalAlignment="Center" TextWrapping="NoWrap" TextTrimming="CharacterEllipsis"/></DockPanel>
+  </Border>
+ </Grid>
+</Window>
