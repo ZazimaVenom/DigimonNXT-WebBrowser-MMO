@@ -1,0 +1,40 @@
+{
+  "release": "0.3.0",
+  "forms": 1000,
+  "variants": {
+    "normal": 500,
+    "paradox": 500
+  },
+  "stages": {
+    "Rookie": 156,
+    "Champion": 263,
+    "Ultimate": 197,
+    "Mega": 252,
+    "Baby": 32,
+    "In-Training": 48,
+    "Armor": 34,
+    "Ultra": 18
+  },
+  "moves": 768,
+  "forward_routes": 1902,
+  "route_origins": {
+    "Cyber Sleuth": 680,
+    "NXT extension": 267,
+    "Paradox \u00b7 Cyber Sleuth": 690,
+    "Paradox \u00b7 NXT extension": 265
+  },
+  "sprite_count": 1000,
+  "wild_level_cap": 24,
+  "paradox_chance_per_signal": 0.002,
+  "paradox_scan_range": [
+    1,
+    3
+  ],
+  "paradox_power_multiplier": 1.75,
+  "normal_without_paradox": [
+    "thundermon"
+  ],
+  "paradox_without_normal": [
+    "paradox-gigadramon"
+  ]
+}

@@ -1,0 +1,54 @@
+/* Homepage only. Uses the site's palette, typography and keyboard focus styles. */
+.nxt-client-card {
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(270px,340px);
+  margin:26px 0 32px;
+  border:1px solid #355a71;
+  border-top:3px solid var(--cyan);
+  border-radius:8px;
+  background:radial-gradient(ellipse at 0 0,#184d5b66,transparent 65%),#0d1b30;
+  box-shadow:0 12px 36px #02091433;
+}
+.nxt-client-copy {padding:30px 32px;min-width:0}
+.nxt-client-copy h2 {font-size:clamp(1.6rem,2.6vw,2.15rem);line-height:1.15;margin:10px 0 14px}
+.nxt-client-copy>p {max-width:650px;color:var(--muted);margin:0;font-size:1rem}
+.nxt-client-features {display:flex;flex-wrap:wrap;gap:20px 26px;list-style:none;padding:0;margin:26px 0 0}
+.nxt-client-features li {display:flex;align-items:flex-start;gap:10px;color:var(--muted);font-size:.8125rem;line-height:1.5}
+.nxt-client-features .nxt-icon {flex:none;width:21px;height:21px;color:var(--cyan);margin-top:2px}
+.nxt-client-features strong {display:block;font-size:.875rem;color:var(--white);font-weight:650}
+.nxt-client-download {display:flex;flex-direction:column;justify-content:center;gap:16px;padding:28px;border-left:1px solid #355a7180;background:#08142566;border-radius:0 6px 0 0;min-width:0}
+.nxt-client-platform {display:flex;align-items:center;gap:14px}
+.nxt-client-platform>svg {width:32px;height:32px;color:var(--cyan);flex:none}
+.nxt-client-platform h3 {margin:0;font-size:1.05rem;line-height:1.35}
+.nxt-client-platform p {margin:4px 0 0;color:var(--muted);font-size:.8125rem}
+.nxt-client-download-button {min-height:48px;width:100%}
+.nxt-client-requirements {margin:0;color:var(--muted);font-size:.75rem;line-height:1.6;text-align:center}
+.nxt-client-browser {display:inline-flex;gap:9px;align-items:center;justify-content:center;align-self:center;min-height:36px;font-size:.875rem;font-weight:650}
+.nxt-client-browser .nxt-icon {width:17px;height:17px}
+.nxt-client-unavailable {margin:0;padding:12px;border:1px solid var(--edge);border-radius:4px;color:var(--white);font-size:.875rem}
+.nxt-client-help {grid-column:1/-1;border-top:1px solid #355a7180;min-width:0}
+.nxt-client-help summary {display:flex;align-items:center;justify-content:space-between;gap:16px;padding:15px 32px;min-height:48px;list-style:none;color:var(--cyan);cursor:pointer;font-size:.875rem;font-weight:650;border-radius:0 0 6px 6px}
+.nxt-client-help summary::-webkit-details-marker {display:none}
+.nxt-client-help summary:hover {background:#51def40a;color:var(--white)}
+.nxt-client-help summary>span {font-size:1.25rem;font-weight:400;line-height:1}
+.nxt-client-help[open] summary>span {transform:rotate(45deg)}
+.nxt-client-help-content {padding:0 32px 24px;color:var(--muted);font-size:.875rem}
+.nxt-client-help ol {margin:0;padding-left:22px}
+.nxt-client-help li {padding:5px 0 5px 5px}
+.nxt-client-help strong,.nxt-client-help b {color:var(--white);font-weight:650}
+.nxt-client-help-content>p {margin:14px 0 0;padding-top:14px;border-top:1px solid #355a7166;max-width:960px}
+.nxt-client-help code {font-size:.8125rem;overflow-wrap:anywhere}
+@media (max-width:800px) {
+  .nxt-client-card {grid-template-columns:minmax(0,1fr)}
+  .nxt-client-copy {padding:24px}
+  .nxt-client-download {border-left:0;border-top:1px solid #355a7180;padding:24px;border-radius:0}
+  .nxt-client-platform,.nxt-client-download-button {max-width:440px;width:100%;align-self:center}
+  .nxt-client-help summary {padding:15px 24px}
+  .nxt-client-help-content {padding:0 24px 24px}
+}
+@media (max-width:420px) {
+  .nxt-client-copy,.nxt-client-download {padding:22px 18px}
+  .nxt-client-help summary {padding:15px 18px}
+  .nxt-client-help-content {padding:0 18px 22px}
+  .nxt-client-features {flex-direction:column;gap:16px}
+}

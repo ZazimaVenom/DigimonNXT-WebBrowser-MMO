@@ -1,0 +1,1002 @@
+{
+  "checks": [
+    {
+      "ok": true,
+      "label": "1440px unconfigured homepage renders"
+    },
+    {
+      "ok": true,
+      "label": "1440px unconfigured card has no download link"
+    },
+    {
+      "ok": true,
+      "label": "1440px unconfigured card explains availability"
+    },
+    {
+      "ok": true,
+      "label": "1440px browser play stays available"
+    },
+    {
+      "ok": true,
+      "label": "1440px unavailable state has no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "label": "390px unconfigured homepage renders"
+    },
+    {
+      "ok": true,
+      "label": "390px unconfigured card has no download link"
+    },
+    {
+      "ok": true,
+      "label": "390px unconfigured card explains availability"
+    },
+    {
+      "ok": true,
+      "label": "390px browser play stays available"
+    },
+    {
+      "ok": true,
+      "label": "390px unavailable state has no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "label": "Unconfigured homepage does not request an archive"
+    },
+    {
+      "ok": true,
+      "label": "Configured external URL enables public download button"
+    },
+    {
+      "ok": true,
+      "label": "Download link points directly to external HTTPS URL"
+    },
+    {
+      "ok": true,
+      "label": "External link omits ineffective cross-origin download attribute"
+    },
+    {
+      "ok": true,
+      "label": "Browser play remains on configured game base path"
+    },
+    {
+      "ok": true,
+      "label": "Homepage does not fetch external release before click"
+    },
+    {
+      "ok": true,
+      "label": "External download action accepts keyboard focus"
+    },
+    {
+      "ok": true,
+      "label": "Browser downloads directly from mocked external host"
+    },
+    {
+      "ok": true,
+      "label": "External host controls correct archive download filename"
+    },
+    {
+      "ok": true,
+      "label": "One click requests external release exactly once",
+      "detail": [
+        {
+          "url": "http://127.0.0.1:8094/qa/nxt/assets/dawn/audio/bgm00.ogg",
+          "method": "GET",
+          "resourceType": "fetch"
+        },
+        {
+          "url": "http://127.0.0.1:8094/qa/nxt/assets/dawn/audio/se000.ogg",
+          "method": "GET",
+          "resourceType": "fetch"
+        },
+        {
+          "url": "https://client-download.test/releases/DigimonNXT_Windows_x64_Client_v1.1.0_Dawn_World.zip",
+          "method": "GET",
+          "resourceType": "document"
+        }
+      ]
+    },
+    {
+      "ok": true,
+      "label": "Download click sends no archive/proxy request to game server; existing audio assets are allowed",
+      "detail": [
+        {
+          "url": "http://127.0.0.1:8094/qa/nxt/assets/dawn/audio/bgm00.ogg",
+          "method": "GET",
+          "resourceType": "fetch"
+        },
+        {
+          "url": "http://127.0.0.1:8094/qa/nxt/assets/dawn/audio/se000.ogg",
+          "method": "GET",
+          "resourceType": "fetch"
+        },
+        {
+          "url": "https://client-download.test/releases/DigimonNXT_Windows_x64_Client_v1.1.0_Dawn_World.zip",
+          "method": "GET",
+          "resourceType": "document"
+        }
+      ]
+    },
+    {
+      "ok": true,
+      "label": "Game server never serves archive bytes during card use"
+    },
+    {
+      "ok": true,
+      "label": "Unsafe/non-HTTPS URL is not rendered: http://client-download.test/client.zip"
+    },
+    {
+      "ok": true,
+      "label": "Invalid URL keeps unavailable state"
+    },
+    {
+      "ok": true,
+      "label": "Unsafe/non-HTTPS URL is not rendered: /downloads/client.zip"
+    },
+    {
+      "ok": true,
+      "label": "Invalid URL keeps unavailable state"
+    },
+    {
+      "ok": true,
+      "label": "Unsafe/non-HTTPS URL is not rendered: javascript:alert(1)"
+    },
+    {
+      "ok": true,
+      "label": "Invalid URL keeps unavailable state"
+    },
+    {
+      "ok": true,
+      "label": "No browser JavaScript errors",
+      "detail": []
+    }
+  ],
+  "pageErrors": [],
+  "requests": [
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/index.php",
+      "method": "GET",
+      "resourceType": "document"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/assets/css/digimon-nxt.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/assets/js/digimon-nxt.js?v=0.7.2",
+      "method": "GET",
+      "resourceType": "script"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/assets/css/team-combat.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/assets/css/ranked.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/assets/css/dawn-world.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/assets/css/dawn-polish.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/assets/css/world-notice.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/assets/ui/nxt.svg",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/html/static/images/digimon/wargreymon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/html/static/images/digimon/patamon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/html/static/images/digimon/gabumon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/html/static/images/digimon/agumon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/assets/css/client-download.css?v=1",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/assets/css/dawn-audio.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/assets/js/dawn-audio.js?v=0.7.2",
+      "method": "GET",
+      "resourceType": "script"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/assets/ui/circuits.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/html/static/images/digimon/veemon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/html/static/images/digimon/terriermon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/html/static/images/digimon/guilmon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/html/static/images/digimon/biyomon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/html/static/images/digimon/tentomon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/html/static/images/digimon/palmon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/html/static/images/digimon/gomamon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/html/static/images/digimon/gatomon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/html/static/images/digimon/renamon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/html/static/images/digimon/impmon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/index.php",
+      "method": "GET",
+      "resourceType": "document"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/assets/css/digimon-nxt.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/assets/js/digimon-nxt.js?v=0.7.2",
+      "method": "GET",
+      "resourceType": "script"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/assets/css/team-combat.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/assets/css/ranked.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/assets/css/dawn-world.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/assets/css/dawn-polish.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/assets/css/world-notice.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/assets/ui/nxt.svg",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/html/static/images/digimon/wargreymon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/html/static/images/digimon/patamon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/html/static/images/digimon/gabumon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/html/static/images/digimon/agumon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/assets/css/client-download.css?v=1",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/assets/css/dawn-audio.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/assets/js/dawn-audio.js?v=0.7.2",
+      "method": "GET",
+      "resourceType": "script"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/assets/ui/circuits.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/html/static/images/digimon/veemon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/html/static/images/digimon/terriermon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/html/static/images/digimon/guilmon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/html/static/images/digimon/biyomon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/html/static/images/digimon/tentomon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/html/static/images/digimon/palmon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/html/static/images/digimon/gomamon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/html/static/images/digimon/gatomon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/html/static/images/digimon/renamon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/DigimonNXT/html/static/images/digimon/impmon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/index.php",
+      "method": "GET",
+      "resourceType": "document"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/css/digimon-nxt.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/js/digimon-nxt.js?v=0.7.2",
+      "method": "GET",
+      "resourceType": "script"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/css/team-combat.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/css/ranked.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/css/dawn-world.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/css/dawn-polish.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/css/world-notice.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/ui/nxt.svg",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/wargreymon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/patamon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/gabumon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/agumon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/css/client-download.css?v=1",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/css/dawn-audio.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/js/dawn-audio.js?v=0.7.2",
+      "method": "GET",
+      "resourceType": "script"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/ui/circuits.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/veemon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/terriermon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/guilmon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/biyomon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/tentomon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/palmon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/gomamon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/gatomon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/renamon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/impmon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/dawn/audio/bgm00.ogg",
+      "method": "GET",
+      "resourceType": "fetch"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/dawn/audio/se000.ogg",
+      "method": "GET",
+      "resourceType": "fetch"
+    },
+    {
+      "url": "https://client-download.test/releases/DigimonNXT_Windows_x64_Client_v1.1.0_Dawn_World.zip",
+      "method": "GET",
+      "resourceType": "document"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/index.php",
+      "method": "GET",
+      "resourceType": "document"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/css/digimon-nxt.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/js/digimon-nxt.js?v=0.7.2",
+      "method": "GET",
+      "resourceType": "script"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/css/team-combat.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/css/ranked.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/css/dawn-world.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/css/dawn-polish.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/css/world-notice.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/wargreymon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/patamon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/gabumon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/agumon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/css/client-download.css?v=1",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/css/dawn-audio.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/ui/nxt.svg",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/js/dawn-audio.js?v=0.7.2",
+      "method": "GET",
+      "resourceType": "script"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/ui/circuits.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/veemon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/terriermon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/guilmon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/biyomon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/tentomon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/palmon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/gomamon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/gatomon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/renamon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/impmon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/index.php",
+      "method": "GET",
+      "resourceType": "document"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/css/digimon-nxt.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/js/digimon-nxt.js?v=0.7.2",
+      "method": "GET",
+      "resourceType": "script"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/css/team-combat.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/css/ranked.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/css/dawn-world.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/css/dawn-polish.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/css/world-notice.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/wargreymon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/patamon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/gabumon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/agumon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/css/client-download.css?v=1",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/css/dawn-audio.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/ui/nxt.svg",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/js/dawn-audio.js?v=0.7.2",
+      "method": "GET",
+      "resourceType": "script"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/ui/circuits.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/veemon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/terriermon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/guilmon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/biyomon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/tentomon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/palmon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/gomamon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/gatomon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/renamon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/impmon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/index.php",
+      "method": "GET",
+      "resourceType": "document"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/css/digimon-nxt.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/js/digimon-nxt.js?v=0.7.2",
+      "method": "GET",
+      "resourceType": "script"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/css/team-combat.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/css/ranked.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/css/dawn-world.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/css/dawn-polish.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/css/world-notice.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/wargreymon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/patamon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/gabumon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/agumon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/css/client-download.css?v=1",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/css/dawn-audio.css?v=0.7.2",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/ui/nxt.svg",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/js/dawn-audio.js?v=0.7.2",
+      "method": "GET",
+      "resourceType": "script"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/assets/ui/circuits.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/veemon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/terriermon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/guilmon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/biyomon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/tentomon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/palmon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/gomamon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/gatomon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/renamon.png",
+      "method": "GET",
+      "resourceType": "image"
+    },
+    {
+      "url": "http://127.0.0.1:8094/qa/nxt/html/static/images/digimon/impmon.png",
+      "method": "GET",
+      "resourceType": "image"
+    }
+  ],
+  "verifiedSource": {
+    "index.php": "a0ad48e4d0f87ab8b61e274ed09aad9f54ae69e361126eec2f90378f53a36390",
+    "includes/client_download_card.php": "2aada98ec337427cf4465cf7f3cf2258e2feae483c9dd9f0feaf0319c3329dd4",
+    "config/client_downloads.php": "317f8d45d80655c7a55536368c87e3f45648488c8e625c5cda5a1b93d456e58a"
+  },
+  "notes": [
+    "Actual PHP8.3 and Chromium141 homepage; isolated fixture copies production source with only external URL/base path overridden. Production URL remains blank.",
+    "External archive host is a reserved .test hostname intercepted in Playwright. This proves browser routing and no game-server proxy/ZIP fetch, not availability of a real deployed external host.",
+    "The first user click may activate the existing soundtrack and fetch local audio. These existing game assets are separate from the client archive download.",
+    "Mock response is a tiny empty ZIP with attachment filename; no actual Windows build or remote hosting was created.",
+    "Original local-download report applies to superseded behavior and is not evidence for this revised release.",
+    "Apache .htaccess protection against legacy local ZIPs was not executed by PHP development server; no Apache integration claim is made."
+  ],
+  "php_lint": {
+    "index.php": "passed",
+    "includes/client_download_card.php": "passed",
+    "config/client_downloads.php": "passed"
+  },
+  "visual_review": "Desktop unavailable and mobile configured screenshots visually reviewed: readable copy, coherent layout and clearly separated external-download notice."
+}

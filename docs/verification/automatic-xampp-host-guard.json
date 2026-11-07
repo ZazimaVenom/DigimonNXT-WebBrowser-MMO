@@ -1,0 +1,33 @@
+{
+  "checks": [
+    {
+      "ok": true,
+      "label": "localhost with port can open setup"
+    },
+    {
+      "ok": true,
+      "label": "IPv4 and bracketed IPv6 loopback Host values with ports are accepted"
+    },
+    {
+      "ok": true,
+      "label": "Normal authorized repair still works with already-synchronized password"
+    },
+    {
+      "ok": true,
+      "label": "Foreign and loopback-lookalike Hosts are denied, including valid-CSRF POSTs"
+    },
+    {
+      "ok": true,
+      "label": "Allowed repair and rejected foreign Hosts leave root authentication metadata unchanged"
+    }
+  ],
+  "tested_files": {
+    "_setup.php": "d9a93e3b225a915907b30ca03486f59aa2f7936658f75813525b18724f759535",
+    "includes/setup_database_password.php": "7fff34a50994d33293e06736a71256e460f1d48a4ebcdeb17e808e73137d893f"
+  },
+  "notes": [
+    "Real HTTP requests changed only the Host header while connecting to disposable loopback PHP/MariaDB services.",
+    "Blocked POSTs carried the valid session cookie and CSRF token from allowed loopback setup.",
+    "No password values are included in this evidence."
+  ]
+}

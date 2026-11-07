@@ -1,0 +1,440 @@
+{
+  "checks": [
+    {
+      "ok": true,
+      "label": "1440px homepage renders without database service"
+    },
+    {
+      "ok": true,
+      "label": "1440px Windows download action is visible"
+    },
+    {
+      "ok": true,
+      "label": "1440px card identifies Windows x64 client"
+    },
+    {
+      "ok": true,
+      "label": "1440px page has no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "label": "1440px card fits viewport"
+    },
+    {
+      "ok": true,
+      "label": "1440px controls stay inside card"
+    },
+    {
+      "ok": true,
+      "label": "1440px download accepts keyboard focus"
+    },
+    {
+      "ok": true,
+      "label": "1440px setup instructions open by keyboard"
+    },
+    {
+      "ok": true,
+      "label": "1440px expanded setup text visible"
+    },
+    {
+      "ok": true,
+      "label": "1440px expanded instructions have no page overflow"
+    },
+    {
+      "ok": true,
+      "label": "1440px instructions close by keyboard"
+    },
+    {
+      "ok": true,
+      "label": "390px homepage renders without database service"
+    },
+    {
+      "ok": true,
+      "label": "390px Windows download action is visible"
+    },
+    {
+      "ok": true,
+      "label": "390px card identifies Windows x64 client"
+    },
+    {
+      "ok": true,
+      "label": "390px page has no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "label": "390px card fits viewport"
+    },
+    {
+      "ok": true,
+      "label": "390px controls stay inside card"
+    },
+    {
+      "ok": true,
+      "label": "390px download accepts keyboard focus"
+    },
+    {
+      "ok": true,
+      "label": "390px setup instructions open by keyboard"
+    },
+    {
+      "ok": true,
+      "label": "390px expanded setup text visible"
+    },
+    {
+      "ok": true,
+      "label": "390px expanded instructions have no page overflow"
+    },
+    {
+      "ok": true,
+      "label": "390px instructions close by keyboard"
+    },
+    {
+      "ok": true,
+      "label": "320px homepage renders without database service"
+    },
+    {
+      "ok": true,
+      "label": "320px Windows download action is visible"
+    },
+    {
+      "ok": true,
+      "label": "320px card identifies Windows x64 client"
+    },
+    {
+      "ok": true,
+      "label": "320px page has no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "label": "320px card fits viewport"
+    },
+    {
+      "ok": true,
+      "label": "320px controls stay inside card"
+    },
+    {
+      "ok": true,
+      "label": "320px download accepts keyboard focus"
+    },
+    {
+      "ok": true,
+      "label": "320px setup instructions open by keyboard"
+    },
+    {
+      "ok": true,
+      "label": "320px expanded setup text visible"
+    },
+    {
+      "ok": true,
+      "label": "320px expanded instructions have no page overflow"
+    },
+    {
+      "ok": true,
+      "label": "320px instructions close by keyboard"
+    },
+    {
+      "ok": true,
+      "label": "200% zoom-equivalent (720 CSS px) homepage renders without database service"
+    },
+    {
+      "ok": true,
+      "label": "200% zoom-equivalent (720 CSS px) Windows download action is visible"
+    },
+    {
+      "ok": true,
+      "label": "200% zoom-equivalent (720 CSS px) card identifies Windows x64 client"
+    },
+    {
+      "ok": true,
+      "label": "200% zoom-equivalent (720 CSS px) page has no horizontal overflow"
+    },
+    {
+      "ok": true,
+      "label": "200% zoom-equivalent (720 CSS px) card fits viewport"
+    },
+    {
+      "ok": true,
+      "label": "200% zoom-equivalent (720 CSS px) controls stay inside card"
+    },
+    {
+      "ok": true,
+      "label": "200% zoom-equivalent (720 CSS px) download accepts keyboard focus"
+    },
+    {
+      "ok": true,
+      "label": "200% zoom-equivalent (720 CSS px) setup instructions open by keyboard"
+    },
+    {
+      "ok": true,
+      "label": "200% zoom-equivalent (720 CSS px) expanded setup text visible"
+    },
+    {
+      "ok": true,
+      "label": "200% zoom-equivalent (720 CSS px) expanded instructions have no page overflow"
+    },
+    {
+      "ok": true,
+      "label": "200% zoom-equivalent (720 CSS px) instructions close by keyboard"
+    },
+    {
+      "ok": true,
+      "label": "Homepage/card interactions do not prefetch the ZIP",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "label": "Download is exposed in an anonymous browser session"
+    },
+    {
+      "ok": true,
+      "label": "Download points to a same-server ZIP"
+    },
+    {
+      "ok": true,
+      "label": "Linked ZIP exists inside game directory"
+    },
+    {
+      "ok": true,
+      "label": "Hosted ZIP is byte-identical to baseline Windows build"
+    },
+    {
+      "ok": true,
+      "label": "HTTP HEAD reports correct ZIP byte length"
+    },
+    {
+      "ok": true,
+      "label": "HTTP ZIP uses archive content type"
+    },
+    {
+      "ok": true,
+      "label": "Real HTTP response starts with ZIP bytes"
+    },
+    {
+      "ok": true,
+      "label": "Public download button starts correctly named ZIP download"
+    },
+    {
+      "ok": true,
+      "label": "Browser download uses displayed server-hosted package"
+    },
+    {
+      "ok": true,
+      "label": "Custom base-path homepage renders"
+    },
+    {
+      "ok": true,
+      "label": "Custom base-path download URL is correct"
+    },
+    {
+      "ok": true,
+      "label": "Custom base-path browser play URL is correct"
+    },
+    {
+      "ok": true,
+      "label": "Custom base-path ZIP is served"
+    },
+    {
+      "ok": true,
+      "label": "Missing ZIP hides broken download action"
+    },
+    {
+      "ok": true,
+      "label": "Missing ZIP shows helpful availability message"
+    },
+    {
+      "ok": true,
+      "label": "Missing ZIP keeps browser play available"
+    },
+    {
+      "ok": true,
+      "label": "Restored ZIP restores download action"
+    },
+    {
+      "ok": true,
+      "label": "No browser JavaScript errors",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "label": "No failed homepage or asset responses",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "label": "No-JavaScript browser sees download"
+    },
+    {
+      "ok": true,
+      "label": "No-JavaScript setup instructions open with keyboard"
+    },
+    {
+      "ok": true,
+      "label": "No-JavaScript download button starts correctly named ZIP download"
+    }
+  ],
+  "errors": [],
+  "badResponses": [],
+  "metrics": [
+    {
+      "width": 1440,
+      "label": "1440px",
+      "card": {
+        "x": 20,
+        "y": 791.96875,
+        "width": 1400,
+        "height": 329.875
+      },
+      "controls": [
+        {
+          "text": "Download for Windows",
+          "left": 1108,
+          "right": 1391,
+          "width": 283,
+          "height": 48
+        },
+        {
+          "text": "Play in browser",
+          "left": 1175,
+          "right": 1324,
+          "width": 149,
+          "height": 36
+        },
+        {
+          "text": "First launch & server setup +",
+          "left": 21,
+          "right": 1419,
+          "width": 1398,
+          "height": 51.6875
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "label": "390px",
+      "card": {
+        "x": 10,
+        "y": 1050.125,
+        "width": 370,
+        "height": 742.40625
+      },
+      "controls": [
+        {
+          "text": "Download for Windows",
+          "left": 29,
+          "right": 361,
+          "width": 332,
+          "height": 48
+        },
+        {
+          "text": "Play in browser",
+          "left": 120.5,
+          "right": 269.5,
+          "width": 149,
+          "height": 36
+        },
+        {
+          "text": "First launch & server setup +",
+          "left": 11,
+          "right": 379,
+          "width": 368,
+          "height": 51.6875
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "label": "320px",
+      "card": {
+        "x": 10,
+        "y": 1133.453125,
+        "width": 300,
+        "height": 742.40625
+      },
+      "controls": [
+        {
+          "text": "Download for Windows",
+          "left": 29,
+          "right": 291,
+          "width": 262,
+          "height": 48
+        },
+        {
+          "text": "Play in browser",
+          "left": 85.5,
+          "right": 234.5,
+          "width": 149,
+          "height": 36
+        },
+        {
+          "text": "First launch & server setup +",
+          "left": 11,
+          "right": 309,
+          "width": 298,
+          "height": 51.6875
+        }
+      ]
+    },
+    {
+      "width": 720,
+      "label": "200% zoom-equivalent (720 CSS px)",
+      "card": {
+        "x": 12,
+        "y": 781.703125,
+        "width": 696,
+        "height": 558.390625
+      },
+      "controls": [
+        {
+          "text": "Download for Windows",
+          "left": 140,
+          "right": 580,
+          "width": 440,
+          "height": 48
+        },
+        {
+          "text": "Play in browser",
+          "left": 285.5,
+          "right": 434.5,
+          "width": 149,
+          "height": 36
+        },
+        {
+          "text": "First launch & server setup +",
+          "left": 13,
+          "right": 707,
+          "width": 694,
+          "height": 51.6875
+        }
+      ]
+    }
+  ],
+  "download": {
+    "filename": "DigimonNXT_Windows_x64_Client_v1.1.0_Dawn_World.zip",
+    "url": "http://127.0.0.1:8094/DigimonNXT/downloads/DigimonNXT_Windows_x64_Client_v1.1.0_Dawn_World.zip",
+    "size": 286007739,
+    "sha256": "5208e882be770141a9947ad37ab7d04c721168e1dced5fd9849336e8d4880d82",
+    "contentType": "application/zip",
+    "httpGetStatus": 200,
+    "zipPrefix": "504b0304140000000800b90e175d7a4cfb4e252d000028510000280000004469",
+    "firstChunkBytes": 65381,
+    "fullHttpDownload": false
+  },
+  "notes": [
+    "PHP8.3 / actual headless Chromium141. Database service intentionally absent; no authenticated session was seeded.",
+    "Entire hosted ZIP compared locally by SHA256. Real HTTP HEAD, beginning bytes and native browser download checked; downloads canceled immediately to avoid unnecessary full transfer.",
+    "1440,390,320 and720 CSS pixel viewports. 720 CSS pixels reproduces available layout width of a 1440px desktop at200% browser zoom; browser chrome zoom itself was not automated.",
+    "Custom base-path and missing-file checks use separate QA PHP/config copy with shared static assets; production configuration and ZIP remain unchanged."
+  ],
+  "php_lint": {
+    "index.php": "passed",
+    "includes/client_download_card.php": "passed",
+    "config/client_downloads.php": "passed"
+  },
+  "verified_source_sha256": {
+    "index.php": "a0ad48e4d0f87ab8b61e274ed09aad9f54ae69e361126eec2f90378f53a36390",
+    "includes/client_download_card.php": "b7d77a39ffcee577c31211cea0f9e2bba0723bfee2b5f7879a1909d258f9e4b4",
+    "config/client_downloads.php": "08fe541eca987e0c08e864df3dc6f1e06c2c5410dc45bf6100d4eb3781a4a90f",
+    "assets/css/client-download.css": "cf2d99fb3c72d6b4602fda8c02e2d786fecb7fee6622bd24f656b0a9bf4e851f"
+  },
+  "visual_review": "Inspected real 1440px desktop and 390px mobile card screenshots: coherent site styling, readable wrapping, visible requirements and prominent download; no visual issues found."
+}

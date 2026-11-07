@@ -1,0 +1,12 @@
+Digimon NXT v0.2.0 Camera Contract Audit
+========================================
+
+PASS - Native map stage remains 1254x1254; no fit-to-container scaling.
+PASS - Fixed scroll viewport uses overflow:auto and overflow-anchor:none.
+PASS - Camera target uses viewport/stage getBoundingClientRect plus current scroll offsets.
+PASS - Camera writes temporarily force scrollBehavior=auto and request behavior=instant with synchronous fallback.
+PASS - Camera recenters after accepted movement.
+PASS - Double requestAnimationFrame correction retained for post-layout browser consistency.
+PASS - Recenter scheduled on resize, load, pageshow, ResizeObserver, document fonts ready and map image decode/load.
+PASS - Multiplayer actors remain world-coordinate positioned; camera state is local-only.
+PASS - Implementation is derived from the accepted regional-map camera contract used by the predecessor browser-MMO build.

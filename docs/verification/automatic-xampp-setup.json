@@ -1,0 +1,196 @@
+{
+  "checks": [
+    {
+      "ok": true,
+      "label": "Real initial MariaDB root is blank and target password does not work"
+    },
+    {
+      "ok": true,
+      "label": "Local setup opens while game database is absent"
+    },
+    {
+      "ok": true,
+      "label": "Setup offers masked current database password input"
+    },
+    {
+      "ok": true,
+      "label": "Opening setup does not rotate credentials"
+    },
+    {
+      "ok": true,
+      "label": "Invalid CSRF blocks password rotation and installation"
+    },
+    {
+      "ok": true,
+      "label": "Nonlocal setup request is denied before credential changes"
+    },
+    {
+      "ok": true,
+      "label": "Create / Repair automatically rotates blank root and installs schema"
+    },
+    {
+      "ok": true,
+      "label": "Blank-password repair accepts requested password"
+    },
+    {
+      "ok": true,
+      "label": "Blank-password repair rejects former blank password"
+    },
+    {
+      "ok": true,
+      "label": "Blank-password repair updates installed config while retaining site/database settings"
+    },
+    {
+      "ok": true,
+      "label": "Automatic repair seeds complete game schema"
+    },
+    {
+      "ok": true,
+      "label": "Repeat repair accepts already-configured target password"
+    },
+    {
+      "ok": true,
+      "label": "Repeat repair does not alter existing database authentication"
+    },
+    {
+      "ok": true,
+      "label": "Repeat repair preserves player account/wallet/party/scans/inventory"
+    },
+    {
+      "ok": true,
+      "label": "Configured old nonblank password rotates automatically"
+    },
+    {
+      "ok": true,
+      "label": "Configured-password repair accepts requested password"
+    },
+    {
+      "ok": true,
+      "label": "Configured-password repair rejects former blank password"
+    },
+    {
+      "ok": true,
+      "label": "Configured-password repair updates installed config while retaining site/database settings"
+    },
+    {
+      "ok": true,
+      "label": "Configured former password stops authenticating"
+    },
+    {
+      "ok": true,
+      "label": "Configured-password rotation preserves all player saves"
+    },
+    {
+      "ok": true,
+      "label": "Stale target config discovers blank root and repairs automatically"
+    },
+    {
+      "ok": true,
+      "label": "Stale-config repair accepts requested password"
+    },
+    {
+      "ok": true,
+      "label": "Stale-config repair rejects former blank password"
+    },
+    {
+      "ok": true,
+      "label": "Stale-config repair updates installed config while retaining site/database settings"
+    },
+    {
+      "ok": true,
+      "label": "Wrong supplied current password makes no credential changes"
+    },
+    {
+      "ok": true,
+      "label": "Rejected current password is neither echoed nor repopulated"
+    },
+    {
+      "ok": true,
+      "label": "Masked current-password submission performs real rotation and repair"
+    },
+    {
+      "ok": true,
+      "label": "Manual-current-password repair accepts requested password"
+    },
+    {
+      "ok": true,
+      "label": "Manual-current-password repair rejects former blank password"
+    },
+    {
+      "ok": true,
+      "label": "Manual-current-password repair updates installed config while retaining site/database settings"
+    },
+    {
+      "ok": true,
+      "label": "Manually supplied old password stops authenticating"
+    },
+    {
+      "ok": true,
+      "label": "Manual rotation and repair preserve player saves"
+    },
+    {
+      "ok": true,
+      "label": "Nonlocal database host is rejected for local password synchronization"
+    },
+    {
+      "ok": true,
+      "label": "Rejected other-host request leaves authentication and saves untouched"
+    },
+    {
+      "ok": true,
+      "label": "Fresh Rebuild automatically rotates blank root before rebuilding"
+    },
+    {
+      "ok": true,
+      "label": "Fresh Rebuild accepts requested password"
+    },
+    {
+      "ok": true,
+      "label": "Fresh Rebuild rejects former blank password"
+    },
+    {
+      "ok": true,
+      "label": "Fresh Rebuild updates installed config while retaining site/database settings"
+    },
+    {
+      "ok": true,
+      "label": "Fresh Rebuild replaces only the disposable game with clean full schema"
+    },
+    {
+      "ok": true,
+      "label": "Other MMO database survives every repair and Fresh Rebuild"
+    },
+    {
+      "ok": true,
+      "label": "Game health connects after automatic rotation and rebuild"
+    },
+    {
+      "ok": true,
+      "label": "No configured or submitted password appears in HTTP responses"
+    },
+    {
+      "ok": true,
+      "label": "No password appears in requests or redirect URLs"
+    },
+    {
+      "ok": true,
+      "label": "No password appears in HTTP/access/application/console runtime logs"
+    }
+  ],
+  "environment": {
+    "database": "Disposable MariaDB 10.11 initialized with blank root authentication",
+    "php": "PHP 8.3",
+    "flow": "Real HTTP _setup.php POST requests with CSRF and session cookies",
+    "remoteGuard": "HTTP test router supplies a nonlocal REMOTE_ADDR; production code unmodified"
+  },
+  "notes": [
+    "First requested-password authentication attempt failed before setup; QA did not preconfigure the requested password.",
+    "Later password changes only arranged isolated old-password scenarios, each validated through the real setup page.",
+    "No production database, prior baseline, or shipped source configuration was modified.",
+    "Secrets are excluded from this evidence."
+  ],
+  "tested_files": {
+    "_setup.php": "1e530e2ed1c2f8351ba94891e50f53dfa5862a2c99135d899d9b0774ef96a54f",
+    "includes/setup_database_password.php": "0f3e07434d42c53b78fb15379c0471840347bbcb4cfcb2a925387240f24cc1b4"
+  }
+}
