@@ -1,5 +1,15 @@
 # Digimon NXT v0.7.2 — Automatic XAMPP setup
 
+<img width="3840" height="2031" alt="1" src="https://github.com/user-attachments/assets/6e805af2-9a75-4517-b16a-d7e4ff27e24f" />
+
+<img width="3833" height="2039" alt="2" src="https://github.com/user-attachments/assets/56735273-5c34-4442-8850-50728831d3e0" />
+
+<img width="3837" height="2032" alt="3" src="https://github.com/user-attachments/assets/0700882c-8232-4371-acac-2920f75bd679" />
+
+<img width="3840" height="2029" alt="4" src="https://github.com/user-attachments/assets/ddbf0b07-9f3b-47b1-9187-5aea26f3c2ec" />
+
+<img width="3840" height="2033" alt="5" src="https://github.com/user-attachments/assets/a278e5de-ef5d-4bdd-8c0b-1ca39a2599dd" />
+
 **External client download:** The homepage card links directly to an external file host, so the game server does not upload the client ZIP to players. Set `windows['url']` in `public_html/config/client_downloads.php` to the client ZIP's permanent public HTTPS link. No external URL has been supplied yet, so the download is unavailable until that setting is filled in. The small **External_Client_URL_Update ZIP** updates an existing game without database setup. It includes an Apache rule blocking the retired local download directory; remove any old client ZIP from your installed `downloads/` folder as well. The full source already includes this correction and needs no companion client package. See [external download setup](docs/CLIENT_DOWNLOADS.md).
 
 **Battle animations:** Quick attack movement, elemental skill effects, per-hit damage, critical and effectiveness feedback, healing and status cues, and synchronized original Dawn sound. Commands resolve in place so the soundtrack continues. New Battle Park matches involving players support recorded replays with speed and skip controls.
